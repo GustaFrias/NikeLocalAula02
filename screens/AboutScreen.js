@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   title: {
+    padding: 30,
     fontSize: 20, // Tamanho grande
     fontWeight: 'bold', // Deixa o texto em negrito
     color: '#111', // Cor do texto (quase preto)

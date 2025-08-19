@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
   banner: {
     width: '100%', // Largura total
-    height: 400, // Altura fixa
+    height: 130, // Altura fixa
     borderRadius: 3, // arredonda as bordas
   },
   title: {

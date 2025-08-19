@@ -2,6 +2,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import HomeScreen from '../screens/HomeScreen';
 import AboutScreen from '../screens/AboutScreen';
+import ProductsScreen from '../screens/ProductsScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,7 +19,9 @@ const AppNavigator = () => {
             iconName = focused
               ? 'information-circle'
               : 'information-circle-outline';
-          }
+          } else if (route.name === 'Produtos') {
+            iconName = focused ? 'bag' : 'bag-outline';
+          } 
 
           return <Ionicons name={iconName} size={size} color={color} />;
         },
@@ -28,6 +31,7 @@ const AppNavigator = () => {
       })}>
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="About" component={AboutScreen} />
+      <Tab.Screen name="Produtos" component={ProductsScreen} />
     </Tab.Navigator>
   );
 };
